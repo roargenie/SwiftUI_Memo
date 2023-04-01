@@ -10,9 +10,9 @@
 		F6D774C229D800150055EBEC /* SwiftUIMemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D774C129D800150055EBEC /* SwiftUIMemoApp.swift */; };
 		F6D774C429D800150055EBEC /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D774C329D800150055EBEC /* Persistence.swift */; };
 		F6D774C729D800150055EBEC /* SwiftUIMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F6D774C529D800150055EBEC /* SwiftUIMemo.xcdatamodeld */; };
-		F6D774C929D800150055EBEC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D774C829D800150055EBEC /* ContentView.swift */; };
 		F6D774CB29D800160055EBEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6D774CA29D800160055EBEC /* Assets.xcassets */; };
 		F6D774CF29D800160055EBEC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6D774CE29D800160055EBEC /* Preview Assets.xcassets */; };
+		F6D774D629D800FC0055EBEC /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D774D529D800FC0055EBEC /* MainListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +20,10 @@
 		F6D774C129D800150055EBEC /* SwiftUIMemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIMemoApp.swift; sourceTree = "<group>"; };
 		F6D774C329D800150055EBEC /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		F6D774C629D800150055EBEC /* SwiftUIMemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftUIMemo.xcdatamodel; sourceTree = "<group>"; };
-		F6D774C829D800150055EBEC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F6D774CA29D800160055EBEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6D774CC29D800160055EBEC /* SwiftUIMemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUIMemo.entitlements; sourceTree = "<group>"; };
 		F6D774CE29D800160055EBEC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F6D774D529D800FC0055EBEC /* MainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +56,12 @@
 		F6D774C029D800150055EBEC /* SwiftUIMemo */ = {
 			isa = PBXGroup;
 			children = (
+				F6D774D729D801260055EBEC /* CoreData */,
+				F6D774D829D801340055EBEC /* Memory */,
 				F6D774C129D800150055EBEC /* SwiftUIMemoApp.swift */,
-				F6D774C329D800150055EBEC /* Persistence.swift */,
-				F6D774C829D800150055EBEC /* ContentView.swift */,
+				F6D774D529D800FC0055EBEC /* MainListView.swift */,
 				F6D774CA29D800160055EBEC /* Assets.xcassets */,
 				F6D774CC29D800160055EBEC /* SwiftUIMemo.entitlements */,
-				F6D774C529D800150055EBEC /* SwiftUIMemo.xcdatamodeld */,
 				F6D774CD29D800160055EBEC /* Preview Content */,
 			);
 			path = SwiftUIMemo;
@@ -73,6 +73,22 @@
 				F6D774CE29D800160055EBEC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F6D774D729D801260055EBEC /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				F6D774C329D800150055EBEC /* Persistence.swift */,
+				F6D774C529D800150055EBEC /* SwiftUIMemo.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		F6D774D829D801340055EBEC /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Memory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,8 +162,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6D774C729D800150055EBEC /* SwiftUIMemo.xcdatamodeld in Sources */,
+				F6D774D629D800FC0055EBEC /* MainListView.swift in Sources */,
 				F6D774C229D800150055EBEC /* SwiftUIMemoApp.swift in Sources */,
-				F6D774C929D800150055EBEC /* ContentView.swift in Sources */,
 				F6D774C429D800150055EBEC /* Persistence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
